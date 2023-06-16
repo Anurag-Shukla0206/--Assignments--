@@ -15,7 +15,7 @@ public class Main {
         URL url = null;
         HttpURLConnection connection = null;
         int responseCode = 0;
-        String urlString = "https://api.zippopotam.us/us/33162";
+        String urlString = "https://api.chucknorris.io/jokes/random";
 
 
         try {
@@ -27,6 +27,7 @@ public class Main {
         //connection
 
         try {
+            assert url != null;
             connection = (HttpURLConnection) url.openConnection();
             responseCode = connection.getResponseCode();
         } catch (Exception e) {
@@ -39,7 +40,7 @@ public class Main {
         {
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             StringBuilder apiData = new StringBuilder();
-            String readLine = null;
+            String readLine;
 
             while((readLine = in.readLine())!= null)
             {
@@ -55,14 +56,17 @@ public class Main {
 
             JSONObject jsonAPIResponse = new JSONObject(apiData.toString());
 
-            System.out.println(jsonAPIResponse.get("post code"));
-            System.out.println(jsonAPIResponse.get("country"));
-            System.out.println(jsonAPIResponse.get("country abbreviation"));
-            System.out.println(jsonAPIResponse.get("places"));
+            System.out.println(jsonAPIResponse.get("categories"));
+            System.out.println(jsonAPIResponse.get("created_at"));
+            System.out.println(jsonAPIResponse.get("icon_url"));
+            System.out.println(jsonAPIResponse.get("id"));
+            System.out.println(jsonAPIResponse.get("updated_at"));
+            System.out.println(jsonAPIResponse.get("url"));
+            System.out.println(jsonAPIResponse.get("value"));
 
 
-            //
-            System.out.println(jsonAPIResponse.toString());
+
+            System.out.println(jsonAPIResponse);
         }
         else
             System.out.println("API call could not be made!!!");
