@@ -32,7 +32,7 @@
 ```bash
   User.java
 ```
-5. Configuration
+5. factory
 
 ```bash
   BeanManager.java
