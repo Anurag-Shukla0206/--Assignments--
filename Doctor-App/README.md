@@ -105,20 +105,4 @@ Doctor App is a Assignment to practice mapping , APis and SignIn and SignUP Pati
 - Create Appointment (Create the Appointment using email and token)
 - Get Appontment by id(get the specific AppontmentS by providin email, token and Appontment id)
 
-  
-## Authors
-
-- [@hritvik-soni](https://www.github.com/hritvik-soni)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-
-
-## Support
-
-For support, email blah@blah.com or join our Slack channel.
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
 
