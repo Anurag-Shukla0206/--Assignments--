@@ -107,20 +107,6 @@ Instagram Backend is a Assignment to practice mapping , APis and SignIn and Sign
 - Comment Post (comment on the Post using email and token and post id)
 - Follow a user (by user id and email)
 
-  
-## Authors
 
-- [@hritvik-soni](https://www.github.com/hritvik-soni)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-
-
-## Support
-
-For support, email blah@blah.com or join our Slack channel.
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 
